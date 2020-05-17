@@ -1,0 +1,948 @@
+2020-05-17 17:03:55.686 +08:00 [INF] app start
+2020-05-17 17:03:56.104 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:03:56.107 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:03:56.107 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:03:56.107 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:03:56.107 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:03:56.720 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:03:56.788 +08:00 [INF] Request finished in 69.9265ms 200 text/html;charset=utf-8
+2020-05-17 17:03:56.918 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:03:56.969 +08:00 [INF] Request finished in 51.4294ms 200 application/json;charset=utf-8
+2020-05-17 17:04:02.629 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:04:02.637 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:04:02.670 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:04:02.687 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org/?format=json"
+2020-05-17 17:04:02.691 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org/?format=json"
+2020-05-17 17:04:03.867 +08:00 [INF] Received HTTP response headers after 1172.7821ms - 200
+2020-05-17 17:04:03.869 +08:00 [INF] End processing HTTP request after 1186.8431ms - 200
+2020-05-17 17:04:03.879 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-17 17:04:03.885 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 1210.0243ms
+2020-05-17 17:04:03.885 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:04:03.887 +08:00 [INF] Request finished in 1258.4949ms 200 text/plain; charset=utf-8
+2020-05-17 17:04:21.466 +08:00 [INF] app start
+2020-05-17 17:04:21.854 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:04:21.857 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:04:21.857 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:04:21.857 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:04:21.857 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:04:22.309 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:04:22.388 +08:00 [INF] Request finished in 81.5991ms 200 text/html;charset=utf-8
+2020-05-17 17:04:22.523 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:04:22.587 +08:00 [INF] Request finished in 63.0721ms 200 application/json;charset=utf-8
+2020-05-17 17:04:27.286 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:04:27.294 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:04:27.327 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:04:27.345 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org111/?format=json"
+2020-05-17 17:04:27.349 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org111/?format=json"
+2020-05-17 17:04:27.450 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 117.9435ms
+2020-05-17 17:04:27.451 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:04:27.455 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:04:27.478 +08:00 [INF] Request finished in 192.689ms 500 text/plain
+2020-05-17 17:08:49.648 +08:00 [INF] app start
+2020-05-17 17:08:50.054 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:08:50.057 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:08:50.057 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:08:50.057 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:08:50.057 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:08:50.490 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:08:50.567 +08:00 [INF] Request finished in 79.6234ms 200 text/html;charset=utf-8
+2020-05-17 17:08:50.702 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:08:50.763 +08:00 [INF] Request finished in 60.8079ms 200 application/json;charset=utf-8
+2020-05-17 17:08:55.396 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:08:55.404 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:08:55.438 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:08:55.455 +08:00 [INF] Start processing HTTP request GET "https://api.ipifylll.org/?format=json"
+2020-05-17 17:08:55.460 +08:00 [INF] Sending HTTP request GET "https://api.ipifylll.org/?format=json"
+2020-05-17 17:08:55.561 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 117.8273ms
+2020-05-17 17:08:55.561 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:08:55.566 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:08:55.588 +08:00 [INF] Request finished in 192.2613ms 500 text/plain
+2020-05-17 17:10:28.380 +08:00 [INF] app start
+2020-05-17 17:10:28.773 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:10:28.776 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:10:28.776 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:10:28.776 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:10:28.776 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:10:29.230 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:10:29.308 +08:00 [INF] Request finished in 81.6696ms 200 text/html;charset=utf-8
+2020-05-17 17:10:29.443 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:10:29.503 +08:00 [INF] Request finished in 60.1401ms 200 application/json;charset=utf-8
+2020-05-17 17:10:33.751 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:10:33.759 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:10:33.793 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:10:33.810 +08:00 [INF] Start processing HTTP request GET "https://api.ipifylll.org/?format=json"
+2020-05-17 17:10:33.814 +08:00 [INF] Sending HTTP request GET "https://api.ipifylll.org/?format=json"
+2020-05-17 17:10:33.925 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 127.6602ms
+2020-05-17 17:10:33.926 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:10:33.930 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:10:33.953 +08:00 [INF] Request finished in 202.1613ms 500 text/plain
+2020-05-17 17:11:00.474 +08:00 [INF] app start
+2020-05-17 17:11:00.873 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:11:00.876 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:11:00.876 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:11:00.876 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:11:00.876 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:11:01.310 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:11:01.386 +08:00 [INF] Request finished in 79.1174ms 200 text/html;charset=utf-8
+2020-05-17 17:11:01.522 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:11:01.582 +08:00 [INF] Request finished in 60.554ms 200 application/json;charset=utf-8
+2020-05-17 17:11:06.928 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:11:06.936 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:11:06.969 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:11:06.987 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org/?format=json"
+2020-05-17 17:11:06.991 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org/?format=json"
+2020-05-17 17:11:08.115 +08:00 [INF] Received HTTP response headers after 1120.7018ms - 200
+2020-05-17 17:11:08.116 +08:00 [INF] End processing HTTP request after 1134.9825ms - 200
+2020-05-17 17:11:08.126 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-17 17:11:08.132 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 1158.8017ms
+2020-05-17 17:11:08.133 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:11:08.134 +08:00 [INF] Request finished in 1206.7979ms 200 text/plain; charset=utf-8
+2020-05-17 17:12:50.583 +08:00 [INF] app start
+2020-05-17 17:12:50.968 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:12:50.971 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:12:50.971 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:12:50.971 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:12:50.971 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:12:51.427 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:12:51.503 +08:00 [INF] Request finished in 78.7558ms 200 text/html;charset=utf-8
+2020-05-17 17:12:51.640 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:12:51.700 +08:00 [INF] Request finished in 59.8562ms 200 application/json;charset=utf-8
+2020-05-17 17:12:56.737 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:12:56.745 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:12:56.778 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:12:56.795 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:12:56.800 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:12:56.864 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 81.9462ms
+2020-05-17 17:12:56.865 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:12:56.869 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:12:56.890 +08:00 [INF] Request finished in 153.5092ms 500 text/plain
+2020-05-17 17:13:34.431 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:13:34.432 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:13:34.433 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:13:34.434 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:13:34.434 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:13:34.437 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 3.5631ms
+2020-05-17 17:13:34.437 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:13:34.437 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:13:34.468 +08:00 [INF] Request finished in 36.4847ms 500 text/html; charset=utf-8
+2020-05-17 17:14:04.447 +08:00 [INF] app start
+2020-05-17 17:14:04.838 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:14:04.840 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:14:04.840 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:14:04.840 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:14:04.840 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:14:05.294 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:14:05.375 +08:00 [INF] Request finished in 84.3951ms 200 text/html;charset=utf-8
+2020-05-17 17:14:05.512 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:14:05.572 +08:00 [INF] Request finished in 59.9823ms 200 application/json;charset=utf-8
+2020-05-17 17:14:10.877 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:14:10.885 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:14:10.918 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:14:10.936 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:14:10.940 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:14:10.980 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 57.7868ms
+2020-05-17 17:14:10.980 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:14:10.985 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIp() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:14:11.006 +08:00 [INF] Request finished in 129.1243ms 500 text/plain
+2020-05-17 17:18:53.922 +08:00 [INF] app start
+2020-05-17 17:18:54.312 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:18:54.315 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:18:54.315 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:18:54.315 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:18:54.315 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:18:54.773 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:18:54.851 +08:00 [INF] Request finished in 81.5651ms 200 text/html;charset=utf-8
+2020-05-17 17:18:54.988 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:18:55.044 +08:00 [INF] Request finished in 56.8046ms 200 application/json;charset=utf-8
+2020-05-17 17:18:59.990 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:18:59.998 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:19:00.031 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:19:00.048 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:19:00.053 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:19:00.092 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 56.8278ms
+2020-05-17 17:19:00.092 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:19:00.096 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:19:00.115 +08:00 [INF] Request finished in 125.5777ms 500 text/plain
+2020-05-17 17:20:47.620 +08:00 [INF] app start
+2020-05-17 17:20:48.010 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:20:48.013 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:20:48.013 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:20:48.013 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:20:48.013 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:20:48.483 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:20:48.561 +08:00 [INF] Request finished in 80.8325ms 200 text/html;charset=utf-8
+2020-05-17 17:20:48.695 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:20:48.744 +08:00 [INF] Request finished in 48.7819ms 200 application/json;charset=utf-8
+2020-05-17 17:20:53.106 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:20:53.114 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:20:53.147 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:20:53.164 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:20:53.168 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:20:53.207 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 55.5288ms
+2020-05-17 17:20:53.207 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:20:53.211 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:20:53.228 +08:00 [INF] Request finished in 123.022ms 500 text/plain
+2020-05-17 17:24:41.324 +08:00 [INF] app start
+2020-05-17 17:24:41.715 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:24:41.717 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:24:41.717 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:24:41.717 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:24:41.717 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:24:42.170 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:24:42.248 +08:00 [INF] Request finished in 80.9183ms 200 text/html;charset=utf-8
+2020-05-17 17:24:42.380 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:24:42.426 +08:00 [INF] Request finished in 45.4294ms 200 application/json;charset=utf-8
+2020-05-17 17:24:46.382 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:24:46.390 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:24:46.422 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:24:46.438 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:24:46.442 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:24:46.481 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 55.7478ms
+2020-05-17 17:24:46.482 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:24:46.486 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:24:46.505 +08:00 [INF] Request finished in 123.2393ms 500 text/plain
+2020-05-17 17:24:56.629 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/geoIp  
+2020-05-17 17:24:56.630 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:24:56.630 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:24:56.631 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:24:56.631 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:24:56.634 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 3.2688ms
+2020-05-17 17:24:56.634 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:24:56.634 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:24:56.666 +08:00 [INF] Request finished in 37.7459ms 500 text/html; charset=utf-8
+2020-05-17 17:28:46.879 +08:00 [INF] app start
+2020-05-17 17:28:47.270 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:28:47.272 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:28:47.273 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:28:47.273 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:28:47.273 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:28:47.723 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:28:47.804 +08:00 [INF] Request finished in 84.2628ms 200 text/html;charset=utf-8
+2020-05-17 17:28:47.939 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:28:47.985 +08:00 [INF] Request finished in 45.5338ms 200 application/json;charset=utf-8
+2020-05-17 17:28:52.372 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:28:52.380 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:28:52.412 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:28:52.428 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:28:52.432 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:28:52.472 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 56.3452ms
+2020-05-17 17:28:52.472 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:28:52.476 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:28:52.494 +08:00 [INF] Request finished in 121.9132ms 500 text/plain
+2020-05-17 17:30:42.450 +08:00 [INF] app start
+2020-05-17 17:30:42.834 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:30:42.836 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:30:42.837 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:30:42.837 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:30:42.837 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:30:43.295 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:30:43.374 +08:00 [INF] Request finished in 82.9885ms 200 text/html;charset=utf-8
+2020-05-17 17:30:43.509 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:30:43.555 +08:00 [INF] Request finished in 45.3626ms 200 application/json;charset=utf-8
+2020-05-17 17:30:48.672 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:30:48.680 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:30:48.713 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:30:48.729 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:30:48.734 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:30:48.773 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 56.592ms
+2020-05-17 17:30:48.773 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:30:48.777 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:30:48.794 +08:00 [INF] Request finished in 122.6946ms 500 text/plain
+2020-05-17 17:33:17.546 +08:00 [INF] app start
+2020-05-17 17:33:17.940 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:33:17.943 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:33:17.943 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:33:17.943 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:33:17.943 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:33:18.385 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:33:18.464 +08:00 [INF] Request finished in 82.457ms 200 text/html;charset=utf-8
+2020-05-17 17:33:18.599 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:33:18.648 +08:00 [INF] Request finished in 49.0594ms 200 application/json;charset=utf-8
+2020-05-17 17:33:24.684 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/geoip  
+2020-05-17 17:33:24.692 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:33:24.727 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:33:24.745 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:33:24.750 +08:00 [INF] Sending HTTP request GET "https://api.ipify.orrrrg/?format=json"
+2020-05-17 17:33:24.791 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 59.6321ms
+2020-05-17 17:33:24.792 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:33:24.796 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:33:24.837 +08:00 [INF] Request finished in 153.1089ms 500 text/html; charset=utf-8
+2020-05-17 17:33:41.477 +08:00 [INF] app start
+2020-05-17 17:33:41.869 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:33:41.872 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:33:41.872 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:33:41.872 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:33:41.872 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:33:42.327 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:33:42.404 +08:00 [INF] Request finished in 80.3413ms 200 text/html;charset=utf-8
+2020-05-17 17:33:42.536 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:33:42.588 +08:00 [INF] Request finished in 51.6ms 200 application/json;charset=utf-8
+2020-05-17 17:33:46.907 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:33:46.915 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:33:46.949 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:33:46.966 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:33:46.971 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:33:47.031 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 78.9245ms
+2020-05-17 17:33:47.032 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:33:47.036 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:33:47.055 +08:00 [INF] Request finished in 148.4452ms 500 text/plain
+2020-05-17 17:34:52.406 +08:00 [INF] app start
+2020-05-17 17:34:52.794 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:34:52.797 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:34:52.797 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:34:52.797 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:34:52.797 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:34:53.254 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:34:53.329 +08:00 [INF] Request finished in 78.667ms 200 text/html;charset=utf-8
+2020-05-17 17:34:53.463 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:34:53.511 +08:00 [INF] Request finished in 47.7737ms 200 application/json;charset=utf-8
+2020-05-17 17:34:57.457 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:34:57.465 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:34:57.497 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:34:57.514 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:34:57.518 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:34:57.557 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 56.4499ms
+2020-05-17 17:34:57.558 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:34:57.561 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:34:57.579 +08:00 [INF] Request finished in 122.2146ms 500 text/plain
+2020-05-17 17:50:34.558 +08:00 [INF] app start
+2020-05-17 17:50:34.936 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:50:34.939 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:50:34.939 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:50:34.939 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:50:34.939 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:50:36.010 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:50:36.071 +08:00 [INF] Request finished in 64.1741ms 200 text/html;charset=utf-8
+2020-05-17 17:50:36.201 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:50:36.249 +08:00 [INF] Request finished in 48.7569ms 200 application/json;charset=utf-8
+2020-05-17 17:50:40.072 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:50:40.080 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:50:40.114 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:50:40.130 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:50:40.134 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:50:40.173 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 56.2529ms
+2020-05-17 17:50:40.174 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:50:40.178 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:50:40.197 +08:00 [INF] Request finished in 125.0731ms 500 text/plain
+2020-05-17 17:52:57.625 +08:00 [INF] app start
+2020-05-17 17:52:58.023 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 17:52:58.026 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 17:52:58.026 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 17:52:58.026 +08:00 [INF] Hosting environment: Development
+2020-05-17 17:52:58.026 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 17:52:59.007 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 17:52:59.081 +08:00 [INF] Request finished in 78.0492ms 200 text/html;charset=utf-8
+2020-05-17 17:52:59.215 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 17:52:59.262 +08:00 [INF] Request finished in 46.1257ms 200 application/json;charset=utf-8
+2020-05-17 17:53:02.977 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 17:53:02.985 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:53:03.019 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 17:53:03.035 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:53:03.040 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 17:53:03.079 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 57.0139ms
+2020-05-17 17:53:03.080 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 17:53:03.084 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 17:53:03.104 +08:00 [INF] Request finished in 127.0957ms 500 text/plain
+2020-05-17 18:00:53.966 +08:00 [INF] app start
+2020-05-17 18:00:54.347 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 18:00:54.350 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 18:00:54.350 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 18:00:54.350 +08:00 [INF] Hosting environment: Development
+2020-05-17 18:00:54.350 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 18:00:55.359 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 18:00:55.426 +08:00 [INF] Request finished in 70.2203ms 200 text/html;charset=utf-8
+2020-05-17 18:00:55.556 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 18:00:55.601 +08:00 [INF] Request finished in 44.8368ms 200 application/json;charset=utf-8
+2020-05-17 18:00:59.546 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 18:00:59.554 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 18:00:59.587 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 18:00:59.603 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 18:00:59.607 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 18:00:59.671 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 80.4771ms
+2020-05-17 18:00:59.672 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 18:00:59.676 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 18:00:59.697 +08:00 [INF] Request finished in 151.1791ms 500 text/plain
+2020-05-17 18:08:49.603 +08:00 [INF] app start
+2020-05-17 18:08:49.992 +08:00 [INF] Now listening on: https://localhost:5001
+2020-05-17 18:08:49.995 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-17 18:08:49.995 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-17 18:08:49.995 +08:00 [INF] Hosting environment: Development
+2020-05-17 18:08:49.995 +08:00 [INF] Content root path: /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi
+2020-05-17 18:08:50.997 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-05-17 18:08:51.065 +08:00 [INF] Request finished in 70.3229ms 200 text/html;charset=utf-8
+2020-05-17 18:08:51.192 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-05-17 18:08:51.238 +08:00 [INF] Request finished in 45.4996ms 200 application/json;charset=utf-8
+2020-05-17 18:08:55.452 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/GeoIp  
+2020-05-17 18:08:55.459 +08:00 [INF] Executing endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 18:08:55.491 +08:00 [INF] Route matched with {action = "Get", controller = "GeoIp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller riderTestWebApi.Controllers.GeoIpController (riderTestWebApi).
+2020-05-17 18:08:55.508 +08:00 [INF] Start processing HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 18:08:55.513 +08:00 [INF] Sending HTTP request GET "https://api.ipify.org11/?format=json"
+2020-05-17 18:08:55.582 +08:00 [INF] Executed action riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi) in 86.5162ms
+2020-05-17 18:08:55.583 +08:00 [INF] Executed endpoint 'riderTestWebApi.Controllers.GeoIpController.Get (riderTestWebApi)'
+2020-05-17 18:08:55.587 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: nodename nor servname provided, or not known
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at riderTestWebApi.Service.GeoIpService.GetCurrentIpAsync() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Service/GeoIpService.cs:line 19
+   at riderTestWebApi.Controllers.GeoIpController.Get() in /Users/chiaweiwu/RiderProjects/riderTestWebApi/riderTestWebApi/Controllers/GeoIpController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-17 18:08:55.607 +08:00 [INF] Request finished in 155.9097ms 500 text/plain
